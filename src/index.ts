@@ -22,9 +22,9 @@ const webClient = new WebClient(CONFIG.BOT_TOKEN);
 slackEvents.on('message', async (event) => {
   console.log(event);
 
-  if (event.text == '준호님?') {
+  if (event.text == '?준호님') {
     webClient.chat.postMessage({
-      text: '말걸지마세요',
+      text: '말걸지마세여',
       channel: event.channel,
     });
   }
